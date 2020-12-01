@@ -66,7 +66,7 @@ public class AIPatrolComponent : MonoBehaviour
         enabled = true;
     }
 
-    public void RemoveNavPoint(ref int index)
+    public void RemoveNavPoint(int index)
     {
         if (index < navPointsList.Count)
             navPointsList.RemoveAt(index);
