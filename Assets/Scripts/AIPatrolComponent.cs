@@ -60,13 +60,13 @@ public class AIPatrolComponent : MonoBehaviour
             agent.destination = GetNextNavPoint();
     }
 
-    public void AddNavPoint(Vector3 point)
+    public void AddNavPoint(ref Vector3 point)
     {
         navPointsList.Add(point);
         enabled = true;
     }
 
-    public void RemoveNavPoint(int index)
+    public void RemoveNavPoint(ref int index)
     {
         if (index < navPointsList.Count)
             navPointsList.RemoveAt(index);
